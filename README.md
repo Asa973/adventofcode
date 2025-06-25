@@ -3,5 +3,3 @@
 
 ___
 
-# Here are some of the concepts covered
-
