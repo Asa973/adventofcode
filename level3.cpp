@@ -23,28 +23,19 @@ int main() {
     size_t i = 0;
 
     while (i < memory.size()) {
-        // Look "mul("
         if (memory.substr(i, 4) == "mul(") {
             size_t j = i + 4;
             std::string num1 = "", num2 = "";
-
-            // Extract first number (1-3 digits)
             while (j < memory.size() && isdigit(memory[j]) && num1.size() < 3) {
                 num1 += memory[j];
                 ++j;
             }
-
-            // Check for comma
             if (num1.size() >= 1 && j < memory.size() && memory[j] == ',') {
                 ++j;
-
-                // Extract second number (1-3 digits)
                 while (j < memory.size() && isdigit(memory[j]) && num2.size() < 3) {
                     num2 += memory[j];
                     ++j;
                 }
-
-                // Check for closing parenthesis
                 if (num2.size() >= 1 && j < memory.size() && memory[j] == ')') {
                     // Valid mul(X,Y) found
                     int n1 = std::atoi(num1.c_str());
@@ -59,7 +50,7 @@ int main() {
         ++i; 
     }
 
-    std::cout << "Total sum of multiplications: " << totalSum << std::endl;
+    std::cout << "Total : " << totalSum << std::endl;
 
     return 0;
 }
