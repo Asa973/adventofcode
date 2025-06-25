@@ -12,6 +12,9 @@ Pair the smallest with the smallest, second-smallest with second-smallest, etc
 Compute the absolute differences and sum them
 
 Vector, read a file, ...
+
+for compiling :)
+cpp++ -Wall -Werror -Wextra -std=c++98 <file> 
 */
 
 int main()

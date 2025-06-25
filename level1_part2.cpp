@@ -16,7 +16,7 @@ int main()
     std::map<int, int> rightCount;
     int leftNum, rightNum;
 
-    std::ifstream inputFile("input.txt");
+    std::ifstream inputFile("input_level1.txt");
     if (!inputFile) {
         std::cerr << "Error could not open input.txt" << std::endl;
         return 1;

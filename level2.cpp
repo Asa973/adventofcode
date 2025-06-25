@@ -4,9 +4,10 @@
 #include <sstream>
 #include <cstdlib>
 
+
 int main()
 {
-    std::ifstream inputFile("reports.txt");
+    std::ifstream inputFile("input_level2.txt");
     if (!inputFile) {
         std::cerr << "Error could not open reports.txt" << std::endl;
         return 1;

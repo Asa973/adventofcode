@@ -7,7 +7,7 @@
 not sur
   */
 int main() {
-    std::ifstream inputFile("memory.txt");
+    std::ifstream inputFile("input_level3.txt");
     if (!inputFile) {
         std::cerr << "Error: Could not open memory.txt" << std::endl;
         return 1;
